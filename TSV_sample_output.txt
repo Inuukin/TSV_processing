@@ -1,0 +1,3 @@
+alignment_length,abundance
+52,1
+92,2
