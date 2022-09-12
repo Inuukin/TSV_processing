@@ -41,13 +41,11 @@ def TSV_proc():
 
     bins = DF_2['length'].nunique() ## set number of bins equal to number of unique length values
 
-    plt.hist(DF_2['length'], bins=bins) ## I setted bins to 100 because histogram doesn't really show exact values otherwise 
-    ## (ex. it shows that for 91 value frequency is more that 300 which is not true..)
-    plt.ylabel('Frequency count')
-    plt.xlabel('Aligment length');
-    plt.title('A histogram showing a frequency of aligment lenght values')
-    #plt.show()
-    plt.savefig('Histogram_aligment_length.pdf')  
+    plt.hist(DF_2['length'], bins=bins) 
+    plt.ylabel('Frequency count') ## add label of the y axis
+    plt.xlabel('Aligment length') ## add label of the x axis
+    plt.title('A histogram showing a frequency of aligment lenght values') ## add title
+    plt.savefig('Histogram_aligment_length.pdf')  ## save to pdf 
 
     ## create a frequency table to save a csv
 
